@@ -96,35 +96,46 @@ body {
 .hero-scroll { display: flex; gap: 12px; overflow-x: auto; padding: 0 16px 4px; scrollbar-width: none; }
 .hero-scroll::-webkit-scrollbar { display: none; }
 .hero {
-  flex: none; width: 300px; border-radius: 16px; overflow: hidden; position: relative;
-  background: var(--card); box-shadow: var(--shadow); cursor: pointer;
+  flex: none; width: 300px; height: 200px; border-radius: 18px; overflow: hidden; position: relative;
+  background: var(--gray5); box-shadow: var(--shadow); cursor: pointer;
   transition: transform 0.2s var(--spring);
 }
 .hero:active { transform: scale(0.97); }
-.hero img { width: 100%; height: 170px; object-fit: cover; display: block; background: var(--gray5); }
-.hero .hero-body { padding: 12px 14px 14px; }
-.hero .kick { font-size: 11px; font-weight: 800; letter-spacing: 0.07em; color: var(--blue); text-transform: uppercase; margin-bottom: 3px; }
-.hero h3 { font-size: 18px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.2; }
-.hero .sub { font-size: 13px; color: var(--gray2); margin-top: 3px; font-weight: 500; }
+.hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero .hero-fb { position: absolute; inset: 0; background: linear-gradient(135deg, #c9d6e8, #e8edf5); }
+.hero .hero-grad {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.35) 52%, rgba(0,0,0,0.05) 100%);
+}
+.hero .hero-body { position: absolute; left: 0; right: 0; bottom: 0; padding: 12px 15px 14px; }
+.hero .kick { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; color: #fff; opacity: 0.85; text-transform: uppercase; margin-bottom: 3px; }
+.hero h3 { font-size: 20px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.2; color: #fff; }
+.hero .sub { font-size: 13px; color: rgba(255,255,255,0.78); margin-top: 3px; font-weight: 500; }
 
 /* ---------- movie grid ---------- */
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px 12px; padding: 0 16px; }
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 14px; padding: 0 16px; }
 .mcell { cursor: pointer; transition: transform 0.2s var(--spring); animation: rise 0.45s var(--spring) backwards; }
 .mcell:active { transform: scale(0.95); }
 @keyframes rise { from { opacity: 0; transform: translateY(12px); } }
 .poster {
-  width: 100%; aspect-ratio: 2/3; border-radius: 10px; overflow: hidden;
+  width: 100%; aspect-ratio: 2/3; border-radius: 12px; overflow: hidden;
   background: var(--gray5); box-shadow: var(--shadow); position: relative;
 }
-.poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.poster img { width: 100%; height: 100%; object-fit: cover; display: block; position: relative; z-index: 1; }
 .poster .fb {
   position: absolute; inset: 0; display: grid; place-items: center;
   background: linear-gradient(135deg, #dfe9f5, #eef2f9); color: #a7b4c8;
 }
-.poster .fb svg { width: 34px; height: 34px; }
-.mcell .t { font-size: 13px; font-weight: 600; line-height: 1.25; margin-top: 6px;
+.poster .fb svg { width: 40px; height: 40px; }
+.poster .sbadge {
+  position: absolute; top: 8px; right: 8px; z-index: 2;
+  font-size: 12px; font-weight: 800; color: #fff; letter-spacing: -0.01em;
+  background: rgba(0,0,0,0.55); border-radius: 9px; padding: 4px 8px;
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+}
+.mcell .t { font-size: 14px; font-weight: 700; line-height: 1.25; margin-top: 8px; letter-spacing: -0.01em;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.mcell .m { font-size: 12px; color: var(--gray); margin-top: 2px; font-weight: 500; }
+.mcell .m { font-size: 12.5px; color: var(--gray); margin-top: 3px; font-weight: 500; }
 .score-pill {
   display: inline-flex; align-items: center; gap: 3px;
   font-size: 11px; font-weight: 700; color: var(--green);
@@ -241,8 +252,8 @@ body {
 .state .bigbtn { max-width: 220px; margin: 18px auto 0; }
 
 /* ---------- skeleton ---------- */
-.skel-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px 12px; padding: 0 16px; }
-.skel-p { aspect-ratio: 2/3; border-radius: 10px; background: linear-gradient(100deg, var(--gray5) 40%, #ececf1 50%, var(--gray5) 60%); background-size: 200% 100%; animation: sh 1.3s infinite; }
+.skel-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 14px; padding: 0 16px; }
+.skel-p { aspect-ratio: 2/3; border-radius: 12px; background: linear-gradient(100deg, var(--gray5) 40%, #ececf1 50%, var(--gray5) 60%); background-size: 200% 100%; animation: sh 1.3s infinite; }
 @keyframes sh { to { background-position: -200% 0; } }
 
 .hidden { display: none !important; }
@@ -433,18 +444,24 @@ async function loadMovies() {
 
 /* ---------- render ---------- */
 const ICON_FILM = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M2.5 9.5h19M7.5 5v4.5M16.5 5v4.5"/></svg>`;
-const posterHTML = (m, cls="poster") =>
-  `<div class="${cls}">${m.poster
-    ? `<img src="${esc(m.poster)}" loading="lazy" alt="" onerror="this.remove()">`
-    : ""}<div class="fb">${ICON_FILM}</div></div>`;
+const posterHTML = (m, cls="poster", badge="") => {
+  const a = m.posterOmdb, b = m.poster;
+  let img = "";
+  if (a && b && a !== b) {
+    img = `<img src="${esc(a)}" loading="lazy" alt="" data-fb="${esc(b)}" onerror="var f=this.dataset.fb;if(f){this.dataset.fb='';this.src=f;}else{this.remove();}">`;
+  } else if (a || b) {
+    img = `<img src="${esc(a || b)}" loading="lazy" alt="" onerror="this.remove()">`;
+  }
+  return `<div class="${cls}">${img}<div class="fb">${ICON_FILM}</div>${badge}</div>`;
+};
 
 function cellHTML(m, i) {
   const meta = [m.year, fmtRuntime(m.runtime)].filter(Boolean).join(" · ");
-  const sc = m.score != null ? `<span class="score-pill ${scoreClass(m.score)}">${m.score}</span>` : "";
+  const badge = m.score != null ? `<span class="sbadge">${m.score}</span>` : "";
   return `<div class="mcell" data-id="${esc(m.id)}" style="animation-delay:${Math.min(i*35,350)}ms">
-    ${posterHTML(m)}
+    ${posterHTML(m, "poster", badge)}
     <div class="t">${esc(m.title)}</div>
-    <div class="m">${esc(meta)}</div>${sc}
+    <div class="m">${esc(meta)}</div>
   </div>`;
 }
 
@@ -460,7 +477,8 @@ function renderMovies() {
   const heroes = [...NOW].sort((a,b) => (b.score||0) - (a.score||0)).slice(0, 3);
   $("#heroRow").innerHTML = heroes.map(m => `
     <div class="hero" data-id="${esc(m.id)}">
-      ${m.backdrop ? `<img src="${esc(m.backdrop)}" loading="lazy" alt="" onerror="this.remove()">` : `<div style="height:170px;background:linear-gradient(135deg,#dfe9f5,#eef2f9)"></div>`}
+      ${m.backdrop ? `<img src="${esc(m.backdrop)}" loading="lazy" alt="" onerror="this.remove()">` : `<div class="hero-fb"></div>`}
+      <div class="hero-grad"></div>
       <div class="hero-body">
         <div class="kick">Don't miss</div>
         <h3>${esc(m.title)}</h3>
