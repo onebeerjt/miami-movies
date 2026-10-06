@@ -45,9 +45,10 @@ BLOCKED = {
                             "Cloudflare bot challenge on silverspot.net"),
     "cinepolis-coconut-grove": ("Cinépolis Coconut Grove",
                                 "Cloudflare bot challenge on cinepolisusa.com"),
-    "gables-cinema": ("Coral Gables Art Cinema",
-                      "Ticketing on Incapsula-blocked AgileTix; site lists films but not dated showtimes"),
 }
+# NOTE (2026-10-06): Coral Gables Art Cinema was removed from this list —
+# gablescinema.com/events/ turned out to be server-rendered with full dated
+# showtimes + ticket URLs, so scrapers/gables.py covers it directly.
 
 
 def _probe(url):
@@ -63,7 +64,6 @@ def check_all():
         "amc-sunset": "https://www.amctheatres.com/movie-theatres/miami/amc-sunset-place-24",
         "silverspot-downtown": "https://www.silverspot.net/",
         "cinepolis-coconut-grove": "https://www.cinepolisusa.com/",
-        "gables-cinema": "https://prod3.agileticketing.net/websales/pages/list.aspx?epguid=6ec0e98b-d23e-4240-acce-5ffa059e6887",
     }
     results = {}
     for tid, url in probes.items():

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-06T16:48:23.131520+00:00",
+ "generated": "2026-10-06T17:23:42.650665+00:00",
  "showtimes": [
   {
    "theater": "CMX Brickell City Centre",
@@ -1838,6 +1838,677 @@
    ],
    "format": "Standard",
    "ticket_url": "https://www.o-cinema.org/events/your-mother-your-mother-your-mother"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Lady",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "17:30",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1035480~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1035480~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Lady",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "20:00",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1035480~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1035480~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Lady",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "20:15",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1035480~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1035480~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "The History of Concrete",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "19:45",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036739~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036739~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "The History of Concrete",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "17:30",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036739~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036739~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "You Had to Be There",
+   "date": "2026-10-09",
+   "times": [
+    {
+     "time": "15:00",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032315~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    },
+    {
+     "time": "17:15",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032315~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032315~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "You Had to Be There",
+   "date": "2026-10-10",
+   "times": [
+    {
+     "time": "15:30",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032315~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    },
+    {
+     "time": "19:45",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032315~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032315~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "You Had to Be There",
+   "date": "2026-10-11",
+   "times": [
+    {
+     "time": "19:15",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032315~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032315~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "You Had to Be There",
+   "date": "2026-10-12",
+   "times": [
+    {
+     "time": "17:30",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032315~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032315~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "The Scout",
+   "date": "2026-10-09",
+   "times": [
+    {
+     "time": "19:30",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032317~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032317~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "The Scout",
+   "date": "2026-10-10",
+   "times": [
+    {
+     "time": "13:30",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032317~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    },
+    {
+     "time": "17:30",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032317~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032317~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "The Scout",
+   "date": "2026-10-11",
+   "times": [
+    {
+     "time": "16:30",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032317~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032317~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "The Scout",
+   "date": "2026-10-12",
+   "times": [
+    {
+     "time": "19:45",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032317~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032317~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "The Scout",
+   "date": "2026-10-13",
+   "times": [
+    {
+     "time": "17:30",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032317~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032317~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "The Scout",
+   "date": "2026-10-15",
+   "times": [
+    {
+     "time": "17:30",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032317~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1032317~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Pan\u2019s Labyrinth",
+   "date": "2026-10-09",
+   "times": [
+    {
+     "time": "21:30",
+     "format": "After Hours",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=223142~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "After Hours",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=223142~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Howl\u2019s Moving Castle",
+   "date": "2026-10-10",
+   "times": [
+    {
+     "time": "11:00",
+     "format": "Family Day",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=179001~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Family Day",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=179001~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Howl\u2019s Moving Castle",
+   "date": "2026-10-11",
+   "times": [
+    {
+     "time": "11:00",
+     "format": "Family Day",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=179001~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Family Day",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=179001~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Blade",
+   "date": "2026-10-10",
+   "times": [
+    {
+     "time": "22:00",
+     "format": "Fuku Y2K",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1035612~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Fuku Y2K",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1035612~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "All the President\u2019s Men",
+   "date": "2026-10-13",
+   "times": [
+    {
+     "time": "19:30",
+     "format": "Special Presentations",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1039424~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Special Presentations",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1039424~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Joybubbles",
+   "date": "2026-10-15",
+   "times": [
+    {
+     "time": "19:30",
+     "format": "Special Presentations",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036853~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Special Presentations",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036853~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Fjord",
+   "date": "2026-10-16",
+   "times": [
+    {
+     "time": "13:30",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036522~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036522~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Freddy vs. Jason",
+   "date": "2026-10-17",
+   "times": [
+    {
+     "time": "22:00",
+     "format": "Fuku Y2K",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1035613~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Fuku Y2K",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1035613~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Pulse",
+   "date": "2026-10-24",
+   "times": [
+    {
+     "time": "22:00",
+     "format": "Fuku Y2K",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1035545~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Fuku Y2K",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1035545~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Wicked",
+   "date": "2026-10-27",
+   "times": [
+    {
+     "time": "19:30",
+     "format": "Musicals for Members",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=921948~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Musicals for Members",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=921948~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Wild at Heart",
+   "date": "2026-10-30",
+   "times": [
+    {
+     "time": "21:00",
+     "format": "After Hours",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=919680~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "After Hours",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=919680~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Art House of Horror Halloween Movie Marathon",
+   "date": "2026-10-30",
+   "times": [
+    {
+     "time": "23:59",
+     "format": "After Hours",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036473~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "After Hours",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036473~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Once Upon a Time in Harlem",
+   "date": "2026-11-06",
+   "times": [
+    {
+     "time": "20:00",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1029401~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1029401~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "The Color Purple",
+   "date": "2026-11-08",
+   "times": [
+    {
+     "time": "12:00",
+     "format": "Movies We Love!",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=988000~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Movies We Love!",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=988000~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Fatherland",
+   "date": "2026-11-13",
+   "times": [
+    {
+     "time": "18:00",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1039665~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1039665~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Queen at Sea",
+   "date": "2026-11-13",
+   "times": [
+    {
+     "time": "20:00",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1038367~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1038367~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Fantastic Mr. Fox",
+   "date": "2026-11-14",
+   "times": [
+    {
+     "time": "11:00",
+     "format": "Family Day",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=274786~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Family Day",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=274786~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Fantastic Mr. Fox",
+   "date": "2026-11-15",
+   "times": [
+    {
+     "time": "11:00",
+     "format": "Family Day",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=274786~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Family Day",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=274786~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Evita",
+   "date": "2026-11-17",
+   "times": [
+    {
+     "time": "19:30",
+     "format": "Musicals for Members",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=984136~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Musicals for Members",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=984136~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Bitter Christmas",
+   "date": "2026-11-20",
+   "times": [
+    {
+     "time": "20:00",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1038359~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1038359~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "8 1/2",
+   "date": "2026-12-06",
+   "times": [
+    {
+     "time": "12:00",
+     "format": "Movies We Love!",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=160124~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Movies We Love!",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=160124~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "The Muppets Christmas Carol",
+   "date": "2026-12-12",
+   "times": [
+    {
+     "time": "11:00",
+     "format": "Family Day",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=703849~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Family Day",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=703849~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "The Muppets Christmas Carol",
+   "date": "2026-12-13",
+   "times": [
+    {
+     "time": "11:00",
+     "format": "Family Day",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=703849~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "Family Day",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=703849~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Cameron Winter at Carnegie Hall",
+   "date": "2027-01-09",
+   "times": [
+    {
+     "time": "13:30",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036835~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036835~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Cameron Winter at Carnegie Hall",
+   "date": "2027-01-10",
+   "times": [
+    {
+     "time": "13:30",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036835~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036835~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
+  },
+  {
+   "theater": "Coral Gables Art Cinema",
+   "theater_id": "gables-cinema",
+   "movie": "Cameron Winter at Carnegie Hall",
+   "date": "2027-01-11",
+   "times": [
+    {
+     "time": "19:30",
+     "format": "New Releases",
+     "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036835~1e59984b-ce2f-4c41-87f7-3f13ba11a892&"
+    }
+   ],
+   "format": "New Releases",
+   "ticket_url": "https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=1036835~1e59984b-ce2f-4c41-87f7-3f13ba11a892&",
+   "source": "gablescinema.com"
   }
  ],
  "blocked": {
@@ -1858,16 +2529,10 @@
    "blocked": true,
    "detail": "Cloudflare bot challenge on cinepolisusa.com (probe error: HTTP Error 403: Forbidden)",
    "probe_status": null
-  },
-  "gables-cinema": {
-   "name": "Coral Gables Art Cinema",
-   "blocked": true,
-   "detail": "Ticketing on Incapsula-blocked AgileTix; site lists films but not dated showtimes",
-   "probe_status": 200
   }
  },
  "stats": {
-  "theaters_ok": 3,
-  "listings": 79
+  "theaters_ok": 4,
+  "listings": 120
  }
 }
