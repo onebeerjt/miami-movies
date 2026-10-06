@@ -256,6 +256,60 @@ body {
 .skel-p { aspect-ratio: 2/3; border-radius: 12px; background: linear-gradient(100deg, var(--gray5) 40%, #ececf1 50%, var(--gray5) 60%); background-size: 200% 100%; animation: sh 1.3s infinite; }
 @keyframes sh { to { background-position: -200% 0; } }
 
+/* ---------- theater cards ---------- */
+.fpills { display: flex; gap: 8px; padding: 0 16px 14px; }
+.fpill {
+  border: 0; cursor: pointer; font-family: inherit; font-size: 13px; font-weight: 600;
+  color: var(--gray2); background: var(--card); border-radius: 999px; padding: 8px 16px;
+  box-shadow: var(--shadow); transition: all 0.2s var(--spring);
+}
+.fpill.on { background: var(--ink); color: #fff; }
+.thcard { background: var(--card); border-radius: 16px; margin: 0 16px 14px; overflow: hidden; box-shadow: var(--shadow); }
+.thbanner { height: 86px; display: flex; align-items: flex-end; padding: 12px 16px; position: relative; }
+.thbanner.premium { background: linear-gradient(135deg, #0a84ff, #5e5ce6); }
+.thbanner.rep { background: linear-gradient(135deg, #1c1c1e, #48484a); }
+.thbanner .kindtag {
+  font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #fff;
+  background: rgba(255,255,255,0.22); border-radius: 6px; padding: 4px 8px;
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+}
+.thbody { padding: 14px 16px 16px; }
+.thbody h3 { font-size: 18px; font-weight: 800; letter-spacing: -0.01em; }
+.thbody .taddr { font-size: 13px; color: var(--gray); margin-top: 2px; font-weight: 500; }
+.thbody .tblurb { font-size: 14px; color: var(--gray2); margin-top: 8px; line-height: 1.5; }
+.thbody .tpark { font-size: 13px; color: var(--gray2); margin-top: 8px; line-height: 1.5; background: var(--gray6); border-radius: 10px; padding: 9px 12px; }
+.thbody .tpark b { color: var(--ink); font-weight: 700; }
+.tbtns { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+
+/* ---------- where to watch ---------- */
+.wrow { display: flex; align-items: center; gap: 10px; padding: 11px 0; }
+.wrow + .wrow { border-top: 1px solid var(--hairline); }
+.wrow .wt { flex: 1; min-width: 0; }
+.wrow .wt b { display: block; font-size: 15px; font-weight: 600; letter-spacing: -0.01em; }
+.wrow .wt span { font-size: 12.5px; color: var(--gray); }
+.wrow .wacts { display: flex; gap: 6px; flex: none; }
+.minibtn.ghost { background: var(--gray5); color: var(--ink); }
+.api-note { font-size: 12.5px; color: var(--gray); line-height: 1.5; margin-top: 12px; padding: 10px 12px; background: var(--gray6); border-radius: 10px; }
+
+/* ---------- tips ---------- */
+.tip { background: var(--card); border-radius: 14px; margin: 0 16px 10px; padding: 14px 16px; box-shadow: var(--shadow); display: flex; gap: 12px; }
+.tip .tic {
+  flex: none; width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center;
+  background: rgba(255,149,0,0.12); color: var(--orange);
+}
+.tip .tic svg { width: 19px; height: 19px; }
+.tip b { display: block; font-size: 15px; font-weight: 700; margin-bottom: 3px; letter-spacing: -0.01em; }
+.tip p { font-size: 13.5px; color: var(--gray2); line-height: 1.5; }
+
+/* ---------- film club strip ---------- */
+.mfccard { flex: none; width: 245px; background: var(--card); border-radius: 16px; box-shadow: var(--shadow); overflow: hidden; cursor: pointer; transition: transform 0.2s var(--spring); }
+.mfccard:active { transform: scale(0.97); }
+.mfccard .mb { padding: 14px 16px; }
+.mfccard .mtag { font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--orange); margin-bottom: 6px; }
+.mfccard h3 { font-size: 16px; font-weight: 700; letter-spacing: -0.01em; }
+.mfccard p { font-size: 13px; color: var(--gray2); margin-top: 4px; line-height: 1.45; }
+.mfccard .go { font-size: 13px; color: var(--blue); font-weight: 600; margin-top: 8px; }
+
 .hidden { display: none !important; }
 </style>
 </head>
@@ -300,6 +354,10 @@ body {
         <div class="section-head"><h2>Now Playing</h2><span class="seeall" id="nowCount"></span></div>
         <div class="grid" id="nowGrid"></div>
       </div>
+      <div class="section">
+        <div class="section-head"><h2>From Miami Film Club</h2><button class="seeall" data-open="https://miami-film-club-concept.vercel.app/">View site</button></div>
+        <div class="deal-scroll" id="mfcRow"></div>
+      </div>
     </div>
 
     <div id="pane-soon" class="hidden">
@@ -314,6 +372,10 @@ body {
         <div class="section-head"><h2>Deals</h2></div>
         <div class="deal-scroll" id="dealRow" style="flex-wrap:wrap;overflow:visible"></div>
       </div>
+      <div class="section">
+        <div class="section-head"><h2>Good to know</h2></div>
+        <div id="tipsList"></div>
+      </div>
     </div>
   </div>
 
@@ -321,7 +383,12 @@ body {
   <div id="view-theaters" class="hidden">
     <div class="section" style="padding-top:14px">
       <div class="section-head"><h2>Miami Theaters</h2></div>
-      <div class="group" id="theaterList"></div>
+      <div class="fpills" id="kindPills">
+        <button class="fpill on" data-k="all">All</button>
+        <button class="fpill" data-k="premium">Premium</button>
+        <button class="fpill" data-k="rep">Repertory &amp; Indie</button>
+      </div>
+      <div id="theaterCards"></div>
     </div>
     <div class="section">
       <div class="section-head"><h2>Ticket Apps</h2></div>
@@ -368,33 +435,104 @@ body {
    ===================================================================== */
 const TMDB_API_KEY = null; // <-- paste TMDB v3 API key here to go live
 
-/* ---------- EDITORIAL DEALS (static for v1 — edit freely) ---------- */
+/* ---------- EDITORIAL DEALS + TIPS (static for v1 — edit freely) ---------- */
 const DEALS = [
-  { tag: "$5 Tuesdays", title: "Cinépolis Coconut Grove",
-    text: "Discounted screenings on classic repertory titles — older favorites back on the big screen, announced about a month out.",
+  { tag: "$5 screenings", title: "Cinépolis Coconut Grove throwbacks",
+    text: "Repertory classics back on the big screen for five bucks, announced about a month out.",
     theater: "Cinépolis Coconut Grove" },
+  { tag: "Membership", title: "AMC Stubs",
+    text: "Discount Tuesdays, no online fees, points on everything. Pays for itself in 2–3 visits if you go weekly.",
+    theater: null },
+  { tag: "Membership", title: "Silverspot loyalty",
+    text: "Dine-in perks and member pricing at the Downtown location.",
+    theater: "Silverspot Cinema" },
+  { tag: "Rooftop", title: "Rooftop Cinema Club $19–29",
+    text: "Open-air screenings on Miami Beach with wireless headphones. Student pricing sometimes available.",
+    theater: "Rooftop Cinema Club" },
+  { tag: "Student", title: "Bring your student ID",
+    text: "Most Miami theaters offer student discounts with valid ID — always ask at the box office.",
+    theater: null },
   { tag: "Matinee", title: "Beat the evening prices",
     text: "Most Miami theaters run cheaper matinee pricing before 4–5 PM. Same movie, smaller bill.",
     theater: null },
-  { tag: "Membership", title: "AMC Stubs / Regal-style programs",
-    text: "If you go weekly, a theater membership usually pays for itself in 2–3 visits. Compare perks before you commit.",
-    theater: null },
 ];
 
-/* ---------- THEATERS ---------- */
+const TIPS = [
+  { t: "Movies start ~15–20 min after showtime",
+    p: "Trailers and previews run first. Arrive at the posted time for the full experience — or stroll in 15 late if you only want the feature." },
+  { t: "Matinees before 4–5 PM are cheapest",
+    p: "Daytime shows are discounted at nearly every Miami theater. Same movie, smaller bill." },
+  { t: "Discount Tuesdays",
+    p: "AMC and others run weekly discount days. Check AMC Stubs for the current deal before paying full price." },
+  { t: "$5 Cinépolis throwbacks",
+    p: "Cinépolis Coconut Grove screens repertory classics for $5, announced about a month out. The cheapest big screen in Miami." },
+  { t: "Join a membership if you go weekly",
+    p: "AMC Stubs and Silverspot's program pay for themselves in 2–3 visits. Compare perks before committing." },
+  { t: "Rooftop Cinema: arrive early",
+    p: "Tickets run $19–29 with wireless headphones. Good spots go fast and shows are weather-dependent — check the forecast." },
+  { t: "Repertory sells out",
+    p: "Gables Cinema and O Cinema one-night-only screenings go fast. Buy ahead, especially anniversary shows." },
+  { t: "O Cinema is $11 flat",
+    p: "The South Beach arthouse charges $11 general admission ($7.50 for members). Best popcorn in town, per the regulars." },
+];
+
+/* ---------- MIAMI FILM CLUB (partnership strip) ---------- */
+const MFC_URL = "https://miami-film-club-concept.vercel.app/";
+const MFC_EVENTS = [
+  { tag: "Lookalike contest", title: "Elizabeth Holmes Lookalike Contest",
+    meta: "Wed Oct 21 · 7:30 PM · Churchill's Pub" },
+  { tag: "Interactive screening", title: "Rocky Horror Picture Show",
+    meta: "Pinecrest Gardens · tickets on sale now" },
+  { tag: "Member perk", title: "Oktoberfest Miami 2026",
+    meta: "Discount tickets for the club" },
+];
+
+/* ---------- THEATERS ----------
+   v1: smart deep links (official site + Google showtimes).
+   TO GO LIVE WITH REAL SHOWTIMES: apply for the Atom Tickets Partner API,
+   then replace showtimesQ() usage with a fetch to your showtime endpoint.
+   The "Where to watch" rows in the movie sheet are structured for it. */
 const THEATERS = [
-  { name: "Silverspot Cinema", area: "Downtown Miami",
-    addr: "300 SE 3rd St, Miami, FL 33131",
-    site: "https://www.silverspotcinema.com" },
-  { name: "CMX Brickell City Centre", area: "Brickell",
-    addr: "701 S Miami Ave, Miami, FL 33131",
-    site: "https://www.cmxcinemas.com" },
-  { name: "Cinépolis Coconut Grove", area: "Coconut Grove",
-    addr: "3015 Grand Ave, Miami, FL 33133",
-    site: "https://www.cinepolisusa.com" },
   { name: "AMC Sunset Place 24", area: "South Miami",
-    addr: "5701 Sunset Dr, South Miami, FL 33143",
-    site: "https://www.amctheatres.com" },
+    addr: "5701 Sunset Dr, South Miami, FL 33143", kind: "premium",
+    site: "https://www.amctheatres.com",
+    blurb: "Miami's biggest multiplex — IMAX, Dolby Cinema, 24 screens.",
+    parking: "Park in the Sunset Place garage; validate at the box office." },
+  { name: "CMX Brickell City Centre", area: "Brickell",
+    addr: "701 S Miami Ave, Miami, FL 33131", kind: "premium",
+    site: "https://www.cmxcinemas.com",
+    blurb: "Luxury recliners and in-theater dining in the heart of Brickell.",
+    parking: "Park at Brickell City Centre and validate for a discount." },
+  { name: "Silverspot Cinema", area: "Downtown",
+    addr: "300 SE 3rd St, Miami, FL 33131", kind: "premium",
+    site: "https://www.silverspotcinema.com",
+    blurb: "Boutique dine-in cinema — reserve a recliner, food served to your seat.",
+    parking: "Garage parking on site; validate inside the theater." },
+  { name: "Cinépolis Coconut Grove", area: "Coconut Grove",
+    addr: "3015 Grand Ave, Miami, FL 33133", kind: "premium",
+    site: "https://www.cinepolisusa.com",
+    blurb: "Luxury recliners plus the famous $5 throwback repertory screenings.",
+    parking: "Street and lot parking on Grand Ave; arrive early on weekends." },
+  { name: "Rooftop Cinema Club", area: "Miami Beach",
+    addr: "1212 Lincoln Rd, Miami Beach, FL 33139", kind: "rep",
+    site: "https://rooftopcinemaclub.com",
+    blurb: "Open-air cinema under the stars — wireless headphones, cult classics.",
+    parking: "Lincoln Rd garages nearby; tickets $19–29, weather permitting." },
+  { name: "Coral Gables Art Cinema", area: "Coral Gables",
+    addr: "260 Aragon Ave, Coral Gables, FL 33134", kind: "rep",
+    site: "https://www.gablescinema.com",
+    blurb: "The 305's arthouse home — indie, foreign, and festival favorites.",
+    parking: "City garages on Aragon; free after 6 PM in most." },
+  { name: "O Cinema South Beach", area: "South Beach",
+    addr: "1130 Washington Ave, Miami Beach, FL 33139", kind: "rep",
+    site: "https://www.o-cinema.org/",
+    blurb: "Nonprofit arthouse in the old City Hall — indie, restorations, $11 flat.",
+    parking: "Convenient parking garage nearby; $11 GA, $7.50 for members." },
+  { name: "Miami Film Club Pop-ups", area: "Various venues",
+    addr: "Pop-up locations across Miami", kind: "rep",
+    site: MFC_URL,
+    blurb: "Themed movie parties and pop-up screenings — horror nights, cult classics.",
+    parking: "Venues vary; check the event page before you go." },
 ];
 const TICKET_APPS = [
   { name: "Atom Tickets", sub: "Buy tickets & skip the line", site: "https://www.atomtickets.com" },
@@ -510,14 +648,44 @@ function renderDeals() {
     </div>`).join("");
 }
 
+const ICON_BULB = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 00-4 10.5c.8.7 1 1.5 1 2.5h6c0-1 .2-1.8 1-2.5A6 6 0 0012 3z"/></svg>`;
+function renderTips() {
+  $("#tipsList").innerHTML = TIPS.map(t => `
+    <div class="tip"><div class="tic">${ICON_BULB}</div>
+      <div><b>${esc(t.t)}</b><p>${esc(t.p)}</p></div>
+    </div>`).join("");
+}
+
+function renderMFC() {
+  $("#mfcRow").innerHTML = MFC_EVENTS.map(e => `
+    <div class="mfccard" data-open="${MFC_URL}">
+      <div class="mb">
+        <div class="mtag">${esc(e.tag)}</div>
+        <h3>${esc(e.title)}</h3>
+        <p>${esc(e.meta)}</p>
+        <div class="go">Details</div>
+      </div>
+    </div>`).join("");
+}
+
+let kindFilter = "all";
 function renderTheaters() {
-  $("#theaterList").innerHTML = THEATERS.map((t, i) => `
-    <div class="trow" data-th="${i}">
-      <div class="tic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
-      <div class="tt"><b>${esc(t.name)}</b><span>${esc(t.area)} · ${esc(t.addr)}</span></div>
-      <div class="acts">
-        <button class="minibtn" data-dir="${esc(t.addr)}">Directions</button>
-        <button class="minibtn" data-site="${esc(t.site)}">Tickets</button>
+  const list = THEATERS.filter(t => kindFilter === "all" || t.kind === kindFilter);
+  $("#theaterCards").innerHTML = list.map(t => `
+    <div class="thcard">
+      <div class="thbanner ${t.kind === "premium" ? "premium" : "rep"}">
+        <span class="kindtag">${t.kind === "premium" ? "Premium" : "Repertory & Indie"}</span>
+      </div>
+      <div class="thbody">
+        <h3>${esc(t.name)}</h3>
+        <div class="taddr">${esc(t.area)} · ${esc(t.addr)}</div>
+        <div class="tblurb">${esc(t.blurb)}</div>
+        <div class="tpark"><b>Good to know:</b> ${esc(t.parking)}</div>
+        <div class="tbtns">
+          <button class="minibtn" data-open="${esc(t.site)}">Tickets</button>
+          <button class="minibtn ghost" data-open="${esc(showtimesQ(t.name + " Miami"))}">Showtimes</button>
+          <button class="minibtn ghost" data-open="${esc(mapsQ(t.addr))}">Directions</button>
+        </div>
       </div>
     </div>`).join("");
   $("#appList").innerHTML = TICKET_APPS.map(a => `
@@ -537,6 +705,18 @@ function renderSaved() {
 }
 
 /* ---------- detail sheet ---------- */
+/* Where to watch: per-theater ticket rows. v1 uses smart deep links;
+   swap showtimesQ() for a live showtime fetch once the Atom Partner API key lands. */
+function watchRows(m) {
+  return THEATERS.map(t => `
+    <div class="wrow">
+      <div class="wt"><b>${esc(t.name)}</b><span>${esc(t.area)} · ${t.kind === "premium" ? "Premium" : "Repertory & indie"}</span></div>
+      <div class="wacts">
+        <button class="minibtn" data-open="${esc(t.site)}">Tickets</button>
+        <button class="minibtn ghost" data-open="${esc(showtimesQ(m.title + " " + t.name + " Miami"))}">Times</button>
+      </div>
+    </div>`).join("");
+}
 function openSheet(m) {
   const isSaved = saved.has(m.id);
   const meta = [m.year, m.rated, fmtRuntime(m.runtime), (m.genres||[]).join(", ")].filter(Boolean).join(" · ");
@@ -558,11 +738,10 @@ function openSheet(m) {
         <button class="bigbtn secondary" id="sheetTrailer">Trailer</button>
         <button class="bigbtn secondary" id="sheetSave">${isSaved ? "Saved ✓".replace(" ✓","") : "Save"}</button>
       </div>
-      <div class="showtimes-label">Find showtimes in Miami</div>
-      <button class="bigbtn" id="sheetShowtimes">Showtimes near Miami</button>
-      <div class="st-row" style="flex-wrap:wrap">
-        ${THEATERS.map(t => `<button class="minibtn" data-tsite="${esc(t.site)}" style="padding:10px 16px">${esc(t.name.replace(" Cinema","").replace(" Cinemas","").replace(" 24",""))}</button>`).join("")}
-      </div>
+      <div class="showtimes-label">Where to watch in Miami</div>
+      <div>${watchRows(m)}</div>
+      <div class="api-note">Live showtimes plug in here — tap Times for today's listings.</div>
+      <button class="bigbtn" id="sheetShowtimes" style="margin-top:14px">All showtimes near Miami</button>
       <div style="height:8px"></div>
     </div>`;
   $("#scrim").classList.add("on");
@@ -577,7 +756,6 @@ function openSheet(m) {
     localStorage.setItem("mia-movies-saved", JSON.stringify([...saved]));
     openSheet(m); renderSaved();
   };
-  sh.querySelectorAll("[data-tsite]").forEach(b => b.onclick = () => window.open(b.dataset.tsite, "_blank", "noopener"));
 }
 function closeSheet() {
   $("#scrim").classList.remove("on");
@@ -625,6 +803,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const b = e.target.closest("button"); if (!b) return;
     setView(b.dataset.v);
   });
+  $("#kindPills").addEventListener("click", e => {
+    const b = e.target.closest(".fpill"); if (!b) return;
+    kindFilter = b.dataset.k;
+    document.querySelectorAll(".fpill").forEach(x => x.classList.toggle("on", x === b));
+    renderTheaters();
+  });
   document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => setTab(t.dataset.t)));
 
   let qT;
@@ -634,6 +818,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.querySelector(".app").addEventListener("click", e => {
+    const open = e.target.closest("[data-open]");
+    if (open) { window.open(open.dataset.open, "_blank", "noopener"); return; }
     const site = e.target.closest("[data-site]");
     if (site) { window.open(site.dataset.site, "_blank", "noopener"); return; }
     const dir = e.target.closest("[data-dir]");
@@ -669,7 +855,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // initial load
   $("#nowGrid").innerHTML = Array.from({length: 6}, () => `<div class="skel-p"></div>`).join("");
-  loadMovies().then(() => { renderMovies(); renderTheaters(); });
+  loadMovies().then(() => { renderMovies(); renderTheaters(); renderTips(); renderMFC(); });
 });
 </script>
 </body>
