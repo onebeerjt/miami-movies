@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#f2f2f7">
+<title>Miami Movies</title>
+<style>
+:root {
+  --bg: #f2f2f7;
+  --card: #ffffff;
+  --ink: #1c1c1e;
+  --gray: #8e8e93;
+  --gray2: #636366;
+  --gray5: #e5e5ea;
+  --gray6: #f2f2f7;
+  --blue: #007aff;
+  --green: #34c759;
+  --orange: #ff9500;
+  --red: #ff3b30;
+  --hairline: rgba(0,0,0,0.08);
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+  --spring: cubic-bezier(0.32, 0.72, 0, 1);
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html { background: var(--bg); }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", sans-serif;
+  background: var(--bg); color: var(--ink);
+  min-height: 100dvh; -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+.app { max-width: 560px; margin: 0 auto; padding: calc(var(--sat) + 8px) 0 calc(var(--sab) + 96px); }
+
+/* ---------- nav bar ---------- */
+.navbar {
+  position: sticky; top: 0; z-index: 40;
+  background: rgba(242,242,247,0.86);
+  -webkit-backdrop-filter: blur(20px) saturate(1.6); backdrop-filter: blur(20px) saturate(1.6);
+  border-bottom: 1px solid var(--hairline);
+  padding: calc(var(--sat)) 0 0;
+}
+.nav-inner { padding: 10px 20px 12px; display: flex; align-items: flex-end; justify-content: space-between; }
+.largetitle h1 { font-size: 34px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.05; }
+.largetitle p { font-size: 13px; color: var(--gray); font-weight: 500; margin-top: 2px; }
+.iconbtn {
+  width: 36px; height: 36px; border-radius: 50%; border: 0; cursor: pointer;
+  background: var(--card); color: var(--blue); display: grid; place-items: center;
+  box-shadow: var(--shadow); transition: transform 0.15s var(--spring);
+}
+.iconbtn:active { transform: scale(0.9); }
+.iconbtn svg { width: 19px; height: 19px; }
+.iconbtn.spinning svg { animation: spin 0.9s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---------- search ---------- */
+.searchbar { padding: 2px 16px 10px; }
+.searchbox {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--gray5); border-radius: 12px; padding: 9px 12px;
+}
+.searchbox svg { width: 17px; height: 17px; color: var(--gray); flex: none; }
+.searchbox input {
+  flex: 1; border: 0; outline: 0; background: none;
+  font-size: 16px; color: var(--ink); font-family: inherit;
+}
+.searchbox input::placeholder { color: var(--gray); }
+
+/* ---------- segmented ---------- */
+.segwrap { padding: 0 16px 14px; }
+.seg {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  background: var(--gray5); border-radius: 10px; padding: 2px; position: relative;
+}
+.seg button {
+  border: 0; background: none; font-family: inherit; font-size: 13px; font-weight: 600;
+  color: var(--ink); padding: 8px 0; border-radius: 8px; position: relative; z-index: 1; cursor: pointer;
+}
+.seg .thumb {
+  position: absolute; top: 2px; bottom: 2px; border-radius: 8px; z-index: 0;
+  background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  transition: left 0.3s var(--spring), width 0.3s var(--spring);
+}
+
+/* ---------- sections ---------- */
+.section { padding: 4px 0 18px; }
+.section-head { display: flex; align-items: baseline; justify-content: space-between; padding: 0 20px 10px; }
+.section-head h2 { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+.section-head .seeall { font-size: 15px; color: var(--blue); font-weight: 500; border: 0; background: none; cursor: pointer; font-family: inherit; }
+.eyebrow { padding: 0 20px 6px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray); }
+
+/* ---------- hero (App Store Today style) ---------- */
+.hero-scroll { display: flex; gap: 12px; overflow-x: auto; padding: 0 16px 4px; scrollbar-width: none; }
+.hero-scroll::-webkit-scrollbar { display: none; }
+.hero {
+  flex: none; width: 300px; border-radius: 16px; overflow: hidden; position: relative;
+  background: var(--card); box-shadow: var(--shadow); cursor: pointer;
+  transition: transform 0.2s var(--spring);
+}
+.hero:active { transform: scale(0.97); }
+.hero img { width: 100%; height: 170px; object-fit: cover; display: block; background: var(--gray5); }
+.hero .hero-body { padding: 12px 14px 14px; }
+.hero .kick { font-size: 11px; font-weight: 800; letter-spacing: 0.07em; color: var(--blue); text-transform: uppercase; margin-bottom: 3px; }
+.hero h3 { font-size: 18px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.2; }
+.hero .sub { font-size: 13px; color: var(--gray2); margin-top: 3px; font-weight: 500; }
+
+/* ---------- movie grid ---------- */
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px 12px; padding: 0 16px; }
+.mcell { cursor: pointer; transition: transform 0.2s var(--spring); animation: rise 0.45s var(--spring) backwards; }
+.mcell:active { transform: scale(0.95); }
+@keyframes rise { from { opacity: 0; transform: translateY(12px); } }
+.poster {
+  width: 100%; aspect-ratio: 2/3; border-radius: 10px; overflow: hidden;
+  background: var(--gray5); box-shadow: var(--shadow); position: relative;
+}
+.poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.poster .fb {
+  position: absolute; inset: 0; display: grid; place-items: center;
+  background: linear-gradient(135deg, #dfe9f5, #eef2f9); color: #a7b4c8;
+}
+.poster .fb svg { width: 34px; height: 34px; }
+.mcell .t { font-size: 13px; font-weight: 600; line-height: 1.25; margin-top: 6px;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.mcell .m { font-size: 12px; color: var(--gray); margin-top: 2px; font-weight: 500; }
+.score-pill {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-size: 11px; font-weight: 700; color: var(--green);
+  background: rgba(52,199,89,0.12); border-radius: 6px; padding: 2px 6px; margin-top: 4px;
+}
+.score-pill.mid { color: var(--orange); background: rgba(255,149,0,0.12); }
+.score-pill.low { color: var(--gray2); background: var(--gray5); }
+
+/* ---------- deals ---------- */
+.deal-scroll { display: flex; gap: 12px; overflow-x: auto; padding: 0 16px 4px; scrollbar-width: none; }
+.deal-scroll::-webkit-scrollbar { display: none; }
+.deal {
+  flex: none; width: 250px; background: var(--card); border-radius: 16px;
+  box-shadow: var(--shadow); padding: 16px; cursor: pointer;
+  transition: transform 0.2s var(--spring);
+}
+.deal:active { transform: scale(0.97); }
+.deal .tag {
+  display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--green); background: rgba(52,199,89,0.12);
+  border-radius: 6px; padding: 4px 8px; margin-bottom: 8px;
+}
+.deal h3 { font-size: 16px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 4px; }
+.deal p { font-size: 13px; color: var(--gray2); line-height: 1.45; }
+.deal .go { font-size: 13px; color: var(--blue); font-weight: 600; margin-top: 8px; }
+
+/* ---------- theater list (grouped) ---------- */
+.group { background: var(--card); border-radius: 14px; margin: 0 16px; overflow: hidden; box-shadow: var(--shadow); }
+.trow { display: flex; align-items: center; gap: 12px; padding: 13px 16px; cursor: pointer; transition: background 0.15s; }
+.trow:active { background: var(--gray6); }
+.trow + .trow { border-top: 1px solid var(--hairline); }
+.trow .tic {
+  flex: none; width: 40px; height: 40px; border-radius: 11px; display: grid; place-items: center;
+  background: rgba(0,122,255,0.1); color: var(--blue);
+}
+.trow .tic svg { width: 21px; height: 21px; }
+.trow .tt { flex: 1; min-width: 0; }
+.trow .tt b { display: block; font-size: 16px; font-weight: 600; letter-spacing: -0.01em; }
+.trow .tt span { font-size: 13px; color: var(--gray); display: block; margin-top: 1px; }
+.trow .chev { color: #c7c7cc; flex: none; }
+.trow .chev svg { width: 14px; height: 14px; display: block; }
+.trow .acts { display: flex; gap: 8px; flex: none; }
+.minibtn {
+  border: 0; cursor: pointer; font-family: inherit; font-size: 13px; font-weight: 700;
+  color: var(--blue); background: rgba(0,122,255,0.1); border-radius: 999px; padding: 8px 14px;
+  transition: transform 0.15s var(--spring);
+}
+.minibtn:active { transform: scale(0.93); }
+
+/* ---------- tab bar ---------- */
+.tabbar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
+  background: rgba(255,255,255,0.86);
+  -webkit-backdrop-filter: blur(24px) saturate(1.8); backdrop-filter: blur(24px) saturate(1.8);
+  border-top: 1px solid var(--hairline);
+  padding: 8px 12px calc(var(--sab) + 10px);
+}
+.tabbar .row { max-width: 560px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); }
+.tab {
+  border: 0; background: none; font-family: inherit; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+  font-size: 10px; font-weight: 600; color: var(--gray); padding: 4px 0;
+  transition: color 0.15s, transform 0.15s var(--spring);
+}
+.tab:active { transform: scale(0.92); }
+.tab.on { color: var(--blue); }
+.tab svg { width: 24px; height: 24px; }
+
+/* ---------- detail sheet ---------- */
+.scrim { position: fixed; inset: 0; background: rgba(0,0,0,0.35); z-index: 90; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+.scrim.on { opacity: 1; pointer-events: auto; }
+.sheet {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 95; max-width: 560px; margin: 0 auto;
+  max-height: 92dvh; overflow-y: auto; border-radius: 16px 16px 0 0; background: var(--bg);
+  transform: translateY(105%); transition: transform 0.4s var(--spring);
+  box-shadow: 0 -12px 60px rgba(0,0,0,0.2);
+  padding-bottom: calc(var(--sab) + 28px);
+}
+.sheet.on { transform: translateY(0); }
+.sheet .grab { width: 36px; height: 5px; border-radius: 3px; background: #d1d1d6; margin: 8px auto 0; }
+.sheet .close-x {
+  position: absolute; top: 14px; right: 14px; z-index: 2;
+  width: 30px; height: 30px; border-radius: 50%; border: 0; cursor: pointer;
+  background: rgba(120,120,128,0.35); color: #fff; display: grid; place-items: center;
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+}
+.sheet .close-x svg { width: 15px; height: 15px; }
+.sheet .backdrop { height: 210px; position: relative; margin: 10px 12px 0; border-radius: 14px; overflow: hidden; background: var(--gray5); }
+.sheet .backdrop img { width: 100%; height: 100%; object-fit: cover; }
+.sheet .backdrop::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.45), transparent 55%); }
+.sheet .scontent { padding: 16px 20px 0; }
+.sheet h2 { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.sheet .meta { font-size: 14px; color: var(--gray2); font-weight: 500; margin-top: 6px; }
+.sheet .overview { font-size: 15px; line-height: 1.55; color: var(--ink); margin-top: 12px; }
+.sheet .castline { font-size: 13px; color: var(--gray); margin-top: 10px; line-height: 1.5; }
+.sheet .castline b { color: var(--gray2); font-weight: 600; }
+.bigbtn {
+  display: block; width: 100%; border: 0; cursor: pointer; font-family: inherit;
+  font-size: 17px; font-weight: 700; color: #fff; background: var(--blue);
+  border-radius: 14px; padding: 15px; margin-top: 16px;
+  transition: transform 0.15s var(--spring), opacity 0.15s;
+}
+.bigbtn:active { transform: scale(0.98); opacity: 0.85; }
+.bigbtn.secondary { background: var(--card); color: var(--blue); box-shadow: var(--shadow); }
+.st-row { display: flex; gap: 10px; margin-top: 10px; }
+.st-row .bigbtn { margin-top: 0; }
+.sheet .showtimes-label { font-size: 13px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gray); margin: 20px 0 2px; }
+
+/* ---------- empty / error ---------- */
+.state { text-align: center; padding: 70px 40px; color: var(--gray); }
+.state svg { width: 52px; height: 52px; margin-bottom: 14px; color: #c7c7cc; }
+.state h2 { font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+.state p { font-size: 14px; line-height: 1.5; }
+.state .bigbtn { max-width: 220px; margin: 18px auto 0; }
+
+/* ---------- skeleton ---------- */
+.skel-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px 12px; padding: 0 16px; }
+.skel-p { aspect-ratio: 2/3; border-radius: 10px; background: linear-gradient(100deg, var(--gray5) 40%, #ececf1 50%, var(--gray5) 60%); background-size: 200% 100%; animation: sh 1.3s infinite; }
+@keyframes sh { to { background-position: -200% 0; } }
+
+.hidden { display: none !important; }
+</style>
+</head>
+<body>
+
+<div class="app">
+  <div class="navbar">
+    <div class="nav-inner">
+      <div class="largetitle">
+        <h1>Movies</h1>
+        <p id="dateline">Miami · This Week</p>
+      </div>
+      <button class="iconbtn" id="refreshBtn" aria-label="Refresh">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>
+      </button>
+    </div>
+    <div class="searchbar" id="searchWrap">
+      <div class="searchbox">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search movies" autocomplete="off">
+      </div>
+    </div>
+  </div>
+
+  <!-- MOVIES VIEW -->
+  <div id="view-movies">
+    <div class="segwrap">
+      <div class="seg" id="seg">
+        <div class="thumb" id="segThumb"></div>
+        <button data-v="now" class="on">Now Playing</button>
+        <button data-v="soon">Coming Soon</button>
+        <button data-v="deals">Deals</button>
+      </div>
+    </div>
+
+    <div id="pane-now">
+      <div class="section">
+        <div class="eyebrow">Don't miss</div>
+        <div class="hero-scroll" id="heroRow"></div>
+      </div>
+      <div class="section">
+        <div class="section-head"><h2>Now Playing</h2><span class="seeall" id="nowCount"></span></div>
+        <div class="grid" id="nowGrid"></div>
+      </div>
+    </div>
+
+    <div id="pane-soon" class="hidden">
+      <div class="section">
+        <div class="section-head"><h2>Coming Soon</h2><span class="seeall" id="soonCount"></span></div>
+        <div class="grid" id="soonGrid"></div>
+      </div>
+    </div>
+
+    <div id="pane-deals" class="hidden">
+      <div class="section">
+        <div class="section-head"><h2>Deals</h2></div>
+        <div class="deal-scroll" id="dealRow" style="flex-wrap:wrap;overflow:visible"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- THEATERS VIEW -->
+  <div id="view-theaters" class="hidden">
+    <div class="section" style="padding-top:14px">
+      <div class="section-head"><h2>Miami Theaters</h2></div>
+      <div class="group" id="theaterList"></div>
+    </div>
+    <div class="section">
+      <div class="section-head"><h2>Ticket Apps</h2></div>
+      <div class="group" id="appList"></div>
+    </div>
+  </div>
+
+  <!-- SAVED VIEW -->
+  <div id="view-saved" class="hidden">
+    <div class="section" style="padding-top:14px">
+      <div class="section-head"><h2>Watchlist</h2></div>
+      <div class="grid" id="savedGrid"></div>
+    </div>
+  </div>
+</div>
+
+<nav class="tabbar"><div class="row">
+  <button class="tab on" data-t="movies">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M2.5 9.5h19M7.5 5v4.5M16.5 5v4.5"/></svg>
+    Movies
+  </button>
+  <button class="tab" data-t="theaters">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>
+    Theaters
+  </button>
+  <button class="tab" data-t="saved">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-4-7 4V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+    Watchlist
+  </button>
+</div></nav>
+
+<div class="scrim" id="scrim"></div>
+<div class="sheet" id="sheet"></div>
+
+<script>
+"use strict";
+/* =====================================================================
+   DATA WIRING
+   v1: movies load from the bundled movies.json (curated Oct 2026, TMDB
+       posters/overviews via the Consensus dataset).
+   TO GO LIVE WITH TMDB: set TMDB_API_KEY below. When set, the app fetches
+       https://api.themoviedb.org/3/movie/now_playing?region=US and
+       /movie/upcoming?region=US instead of the bundled file.
+   ===================================================================== */
+const TMDB_API_KEY = null; // <-- paste TMDB v3 API key here to go live
+
+/* ---------- EDITORIAL DEALS (static for v1 — edit freely) ---------- */
+const DEALS = [
+  { tag: "$5 Tuesdays", title: "Cinépolis Coconut Grove",
+    text: "Discounted screenings on classic repertory titles — older favorites back on the big screen, announced about a month out.",
+    theater: "Cinépolis Coconut Grove" },
+  { tag: "Matinee", title: "Beat the evening prices",
+    text: "Most Miami theaters run cheaper matinee pricing before 4–5 PM. Same movie, smaller bill.",
+    theater: null },
+  { tag: "Membership", title: "AMC Stubs / Regal-style programs",
+    text: "If you go weekly, a theater membership usually pays for itself in 2–3 visits. Compare perks before you commit.",
+    theater: null },
+];
+
+/* ---------- THEATERS ---------- */
+const THEATERS = [
+  { name: "Silverspot Cinema", area: "Downtown Miami",
+    addr: "300 SE 3rd St, Miami, FL 33131",
+    site: "https://www.silverspotcinema.com" },
+  { name: "CMX Brickell City Centre", area: "Brickell",
+    addr: "701 S Miami Ave, Miami, FL 33131",
+    site: "https://www.cmxcinemas.com" },
+  { name: "Cinépolis Coconut Grove", area: "Coconut Grove",
+    addr: "3015 Grand Ave, Miami, FL 33133",
+    site: "https://www.cinepolisusa.com" },
+  { name: "AMC Sunset Place 24", area: "South Miami",
+    addr: "5701 Sunset Dr, South Miami, FL 33143",
+    site: "https://www.amctheatres.com" },
+];
+const TICKET_APPS = [
+  { name: "Atom Tickets", sub: "Buy tickets & skip the line", site: "https://www.atomtickets.com" },
+  { name: "Fandango", sub: "Showtimes & tickets", site: "https://www.fandango.com" },
+];
+
+/* ---------- state ---------- */
+let NOW = [], SOON = [];
+let view = "now", tab = "movies", query = "";
+let saved = new Set(JSON.parse(localStorage.getItem("mia-movies-saved") || "[]"));
+const byId = id => [...NOW, ...SOON].find(m => m.id === id);
+
+/* ---------- helpers ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtDate = iso => { try { return new Date(iso + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }); } catch { return ""; } };
+const fmtRuntime = r => r ? `${Math.floor(r/60)}h ${r%60}m` : "";
+const scoreClass = s => s >= 75 ? "" : s >= 60 ? "mid" : "low";
+const yt = t => "https://www.youtube.com/results?search_query=" + encodeURIComponent(t + " official trailer");
+const showtimesQ = t => "https://www.google.com/search?q=" + encodeURIComponent(t + " movie showtimes Miami FL");
+const mapsQ = a => "https://maps.apple.com/?q=" + encodeURIComponent(a);
+
+/* ---------- data load ---------- */
+async function loadMovies() {
+  if (TMDB_API_KEY) {
+    try {
+      const [np, up] = await Promise.all([
+        fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${TMDB_API_KEY}&region=US&page=1`).then(r => r.json()),
+        fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=${TMDB_API_KEY}&region=US&page=1`).then(r => r.json()),
+      ]);
+      const map = m => ({
+        id: "tmdb-" + m.id, title: m.title, year: (m.release_date || "").slice(0, 4),
+        runtime: null, genres: [], directors: [], cast: [],
+        poster: m.poster_path ? "https://image.tmdb.org/t/p/w500" + m.poster_path : null,
+        backdrop: m.backdrop_path ? "https://image.tmdb.org/t/p/w780" + m.backdrop_path : null,
+        overview: m.overview || "", releaseDate: m.release_date, rated: null,
+        score: Math.round((m.vote_average || 0) * 10), tmdb: m.vote_average || 0,
+      });
+      NOW = (np.results || []).map(map);
+      SOON = (up.results || []).map(map);
+      return;
+    } catch (e) { console.warn("TMDB failed, falling back to bundle", e); }
+  }
+  const j = await fetch("movies.json").then(r => r.json());
+  NOW = j.nowPlaying; SOON = j.comingSoon;
+}
+
+/* ---------- render ---------- */
+const ICON_FILM = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M2.5 9.5h19M7.5 5v4.5M16.5 5v4.5"/></svg>`;
+const posterHTML = (m, cls="poster") =>
+  `<div class="${cls}">${m.poster
+    ? `<img src="${esc(m.poster)}" loading="lazy" alt="" onerror="this.remove()">`
+    : ""}<div class="fb">${ICON_FILM}</div></div>`;
+
+function cellHTML(m, i) {
+  const meta = [m.year, fmtRuntime(m.runtime)].filter(Boolean).join(" · ");
+  const sc = m.score != null ? `<span class="score-pill ${scoreClass(m.score)}">${m.score}</span>` : "";
+  return `<div class="mcell" data-id="${esc(m.id)}" style="animation-delay:${Math.min(i*35,350)}ms">
+    ${posterHTML(m)}
+    <div class="t">${esc(m.title)}</div>
+    <div class="m">${esc(meta)}</div>${sc}
+  </div>`;
+}
+
+function filtered(list) {
+  if (!query) return list;
+  const q = query.toLowerCase();
+  return list.filter(m => (m.title + " " + (m.genres||[]).join(" ")).toLowerCase().includes(q));
+}
+
+function renderMovies() {
+  const now = filtered(NOW), soon = filtered(SOON);
+  // hero: top 3 by score
+  const heroes = [...NOW].sort((a,b) => (b.score||0) - (a.score||0)).slice(0, 3);
+  $("#heroRow").innerHTML = heroes.map(m => `
+    <div class="hero" data-id="${esc(m.id)}">
+      ${m.backdrop ? `<img src="${esc(m.backdrop)}" loading="lazy" alt="" onerror="this.remove()">` : `<div style="height:170px;background:linear-gradient(135deg,#dfe9f5,#eef2f9)"></div>`}
+      <div class="hero-body">
+        <div class="kick">Don't miss</div>
+        <h3>${esc(m.title)}</h3>
+        <div class="sub">${esc((m.genres||[]).slice(0,2).join(" · "))}${m.score ? " · " + m.score + "/100" : ""}</div>
+      </div>
+    </div>`).join("");
+  $("#nowGrid").innerHTML = now.length ? now.map(cellHTML).join("")
+    : emptyState("No movies found", "Try a different search.");
+  $("#soonGrid").innerHTML = soon.length ? soon.map(cellHTML).join("")
+    : emptyState("No movies found", "Try a different search.");
+  $("#nowCount").textContent = now.length + " titles";
+  $("#soonCount").textContent = soon.length + " titles";
+  renderDeals();
+}
+
+function emptyState(h, p) {
+  return `<div class="state" style="grid-column:1/-1">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M2.5 9.5h19M7.5 5v4.5M16.5 5v4.5"/></svg>
+    <h2>${h}</h2><p>${p}</p></div>`;
+}
+
+function renderDeals() {
+  $("#dealRow").innerHTML = DEALS.map(d => `
+    <div class="deal" ${d.theater ? `data-theater="${esc(d.theater)}"` : ""}>
+      <div class="tag">${esc(d.tag)}</div>
+      <h3>${esc(d.title)}</h3>
+      <p>${esc(d.text)}</p>
+      ${d.theater ? `<div class="go">View theater</div>` : ""}
+    </div>`).join("");
+}
+
+function renderTheaters() {
+  $("#theaterList").innerHTML = THEATERS.map((t, i) => `
+    <div class="trow" data-th="${i}">
+      <div class="tic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
+      <div class="tt"><b>${esc(t.name)}</b><span>${esc(t.area)} · ${esc(t.addr)}</span></div>
+      <div class="acts">
+        <button class="minibtn" data-dir="${esc(t.addr)}">Directions</button>
+        <button class="minibtn" data-site="${esc(t.site)}">Tickets</button>
+      </div>
+    </div>`).join("");
+  $("#appList").innerHTML = TICKET_APPS.map(a => `
+    <div class="trow" data-site="${esc(a.site)}">
+      <div class="tic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 000 4v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2a2 2 0 000-4V8z"/><path d="M14 6v2M14 11v2M14 16v2" stroke-dasharray="1 2"/></svg></div>
+      <div class="tt"><b>${esc(a.name)}</b><span>${esc(a.sub)}</span></div>
+      <div class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></div>
+    </div>`).join("");
+}
+
+function renderSaved() {
+  const list = [...NOW, ...SOON].filter(m => saved.has(m.id));
+  $("#savedGrid").innerHTML = list.length ? list.map(cellHTML).join("")
+    : `<div class="state" style="grid-column:1/-1">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-4-7 4V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+      <h2>No saved movies</h2><p>Tap a movie and hit Save to build your watchlist.</p></div>`;
+}
+
+/* ---------- detail sheet ---------- */
+function openSheet(m) {
+  const isSaved = saved.has(m.id);
+  const meta = [m.year, m.rated, fmtRuntime(m.runtime), (m.genres||[]).join(", ")].filter(Boolean).join(" · ");
+  const sh = $("#sheet");
+  sh.innerHTML = `
+    <button class="close-x" id="sheetClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="grab"></div>
+    <div class="backdrop">${m.backdrop ? `<img src="${esc(m.backdrop)}" alt="" onerror="this.remove()">` : ""}</div>
+    <div class="scontent">
+      <h2>${esc(m.title)}</h2>
+      <div class="meta">${esc(meta)}</div>
+      ${m.score != null ? `<div style="margin-top:8px"><span class="score-pill ${scoreClass(m.score)}" style="font-size:13px;padding:4px 10px">Consensus ${m.score}/100</span>${m.tmdb ? `<span style="font-size:13px;color:var(--gray);margin-left:8px">TMDB ${m.tmdb}/10</span>` : ""}</div>` : ""}
+      <p class="overview">${esc(m.overview)}</p>
+      ${m.directors && m.directors.length ? `<div class="castline"><b>Directed by</b> ${esc(m.directors.join(", "))}</div>` : ""}
+      ${m.cast && m.cast.length ? `<div class="castline"><b>Starring</b> ${esc(m.cast.join(", "))}</div>` : ""}
+      <div class="st-row">
+        <button class="bigbtn secondary" id="sheetTrailer">Trailer</button>
+        <button class="bigbtn secondary" id="sheetSave">${isSaved ? "Saved ✓".replace(" ✓","") : "Save"}</button>
+      </div>
+      <div class="showtimes-label">Find showtimes in Miami</div>
+      <button class="bigbtn" id="sheetShowtimes">Showtimes near Miami</button>
+      <div class="st-row" style="flex-wrap:wrap">
+        ${THEATERS.map(t => `<button class="minibtn" data-tsite="${esc(t.site)}" style="padding:10px 16px">${esc(t.name.replace(" Cinema","").replace(" Cinemas","").replace(" 24",""))}</button>`).join("")}
+      </div>
+      <div style="height:8px"></div>
+    </div>`;
+  $("#scrim").classList.add("on");
+  sh.classList.add("on");
+  document.body.style.overflow = "hidden";
+  $("#sheetClose").onclick = closeSheet;
+  $("#sheetTrailer").onclick = () => window.open(yt(m.title + " " + (m.year || "")), "_blank", "noopener");
+  $("#sheetShowtimes").onclick = () => window.open(showtimesQ(m.title), "_blank", "noopener");
+  $("#sheetSave").onclick = e => {
+    e.stopPropagation();
+    saved.has(m.id) ? saved.delete(m.id) : saved.add(m.id);
+    localStorage.setItem("mia-movies-saved", JSON.stringify([...saved]));
+    openSheet(m); renderSaved();
+  };
+  sh.querySelectorAll("[data-tsite]").forEach(b => b.onclick = () => window.open(b.dataset.tsite, "_blank", "noopener"));
+}
+function closeSheet() {
+  $("#scrim").classList.remove("on");
+  $("#sheet").classList.remove("on");
+  document.body.style.overflow = "";
+}
+
+/* ---------- view switching ---------- */
+function moveThumb() {
+  const btns = [...document.querySelectorAll("#seg button")];
+  const on = btns.find(b => b.dataset.v === view);
+  if (!on) return;
+  const th = $("#segThumb");
+  th.style.left = on.offsetLeft + "px";
+  th.style.width = on.offsetWidth + "px";
+}
+function setView(v) {
+  view = v;
+  document.querySelectorAll("#seg button").forEach(x => x.classList.toggle("on", x.dataset.v === v));
+  $("#pane-now").classList.toggle("hidden", v !== "now");
+  $("#pane-soon").classList.toggle("hidden", v !== "soon");
+  $("#pane-deals").classList.toggle("hidden", v !== "deals");
+  moveThumb();
+}
+function setTab(t) {
+  tab = t;
+  document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x.dataset.t === t));
+  $("#view-movies").classList.toggle("hidden", t !== "movies");
+  $("#view-theaters").classList.toggle("hidden", t !== "theaters");
+  $("#view-saved").classList.toggle("hidden", t !== "saved");
+  $("#searchWrap").style.display = t === "movies" ? "" : "none";
+  if (t === "saved") renderSaved();
+  if (t === "theaters") renderTheaters();
+  window.scrollTo(0, 0);
+}
+
+/* ---------- wire up ---------- */
+document.addEventListener("DOMContentLoaded", () => {
+  $("#dateline").textContent = "Miami · " + new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+
+  setView("now"); moveThumb();
+  window.addEventListener("resize", moveThumb);
+
+  $("#seg").addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    setView(b.dataset.v);
+  });
+  document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => setTab(t.dataset.t)));
+
+  let qT;
+  $("#q").addEventListener("input", e => {
+    clearTimeout(qT);
+    qT = setTimeout(() => { query = e.target.value.trim(); renderMovies(); }, 220);
+  });
+
+  document.querySelector(".app").addEventListener("click", e => {
+    const site = e.target.closest("[data-site]");
+    if (site) { window.open(site.dataset.site, "_blank", "noopener"); return; }
+    const dir = e.target.closest("[data-dir]");
+    if (dir) { window.open(mapsQ(dir.dataset.dir), "_blank", "noopener"); return; }
+    const th = e.target.closest("[data-theater]");
+    if (th) {
+      const t = THEATERS.find(x => x.name === th.dataset.theater);
+      if (t) window.open(t.site, "_blank", "noopener");
+      return;
+    }
+    const cell = e.target.closest("[data-id]");
+    if (cell) { const m = byId(cell.dataset.id); if (m) openSheet(m); }
+  });
+  $("#scrim").addEventListener("click", closeSheet);
+
+  // pull to refresh
+  let startY = 0, pulling = false;
+  const app = document.querySelector(".app");
+  window.addEventListener("touchstart", e => { if (window.scrollY === 0) { startY = e.touches[0].clientY; pulling = true; } }, { passive: true });
+  window.addEventListener("touchmove", e => {
+    if (!pulling) return;
+    if (e.touches[0].clientY - startY > 90 && window.scrollY === 0) {
+      pulling = false;
+      const btn = $("#refreshBtn"); btn.classList.add("spinning");
+      loadMovies().then(() => { renderMovies(); btn.classList.remove("spinning"); });
+    }
+  }, { passive: true });
+  window.addEventListener("touchend", () => pulling = false, { passive: true });
+  $("#refreshBtn").addEventListener("click", () => {
+    const btn = $("#refreshBtn"); btn.classList.add("spinning");
+    loadMovies().then(() => { renderMovies(); renderSaved(); btn.classList.remove("spinning"); });
+  });
+
+  // initial load
+  $("#nowGrid").innerHTML = Array.from({length: 6}, () => `<div class="skel-p"></div>`).join("");
+  loadMovies().then(() => { renderMovies(); renderTheaters(); });
+});
+</script>
+</body>
+</html>
