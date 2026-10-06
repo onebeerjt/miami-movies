@@ -1,0 +1,1873 @@
+{
+ "generated": "2026-10-06T16:48:23.131520+00:00",
+ "showtimes": [
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Verity",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "14:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9727"
+    },
+    {
+     "time": "17:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9728"
+    },
+    {
+     "time": "17:55",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9722"
+    },
+    {
+     "time": "20:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9729"
+    },
+    {
+     "time": "20:50",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9952"
+    },
+    {
+     "time": "23:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9730"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9727"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "The Nightmare Before Christmas",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "13:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9702"
+    },
+    {
+     "time": "15:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9703"
+    },
+    {
+     "time": "22:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9705"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9702"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Digger",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "14:25",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9732"
+    },
+    {
+     "time": "17:25",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9733"
+    },
+    {
+     "time": "20:30",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9734"
+    }
+   ],
+   "format": "ATMOS XTR",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9732"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Digger",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "14:50",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9721"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9721"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "April X",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "17:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9693"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9693"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Primetime",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "14:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9711"
+    },
+    {
+     "time": "17:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9712"
+    },
+    {
+     "time": "20:25",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9713"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9711"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Heart of the Beast",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "14:55",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9737"
+    },
+    {
+     "time": "17:35",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9738"
+    },
+    {
+     "time": "20:15",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9739"
+    },
+    {
+     "time": "22:55",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9740"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9737"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Forgotten Island",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "13:35",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9697"
+    },
+    {
+     "time": "16:25",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9698"
+    },
+    {
+     "time": "19:10",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9699"
+    },
+    {
+     "time": "22:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9700"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9697"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Avengers: Endgame Encore",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "14:35",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9707"
+    },
+    {
+     "time": "18:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9708"
+    },
+    {
+     "time": "22:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9709"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9707"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Resident Evil",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "15:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9716"
+    },
+    {
+     "time": "17:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9717"
+    },
+    {
+     "time": "20:05",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9718"
+    },
+    {
+     "time": "22:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9719"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9716"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Practical Magic 2",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "20:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9694"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9694"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Spider-Man: Brand New Day",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "14:10",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9692"
+    },
+    {
+     "time": "23:10",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9695"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9692"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "The Odyssey",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "18:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9704"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9704"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "The Big Lebowski (1998)",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "18:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/5760"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/5760"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Verity",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "11:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9774"
+    },
+    {
+     "time": "11:55",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9769"
+    },
+    {
+     "time": "14:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9775"
+    },
+    {
+     "time": "17:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9776"
+    },
+    {
+     "time": "17:55",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9771"
+    },
+    {
+     "time": "20:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9777"
+    },
+    {
+     "time": "21:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9953"
+    },
+    {
+     "time": "23:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9778"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9774"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "The Nightmare Before Christmas",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "11:15",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9751"
+    },
+    {
+     "time": "13:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9752"
+    },
+    {
+     "time": "15:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9753"
+    },
+    {
+     "time": "22:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9755"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9751"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Digger",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "11:20",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9779"
+    },
+    {
+     "time": "14:25",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9780"
+    },
+    {
+     "time": "17:25",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9781"
+    },
+    {
+     "time": "20:30",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9782"
+    }
+   ],
+   "format": "ATMOS XTR",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9779"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Digger",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "14:50",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9770"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9770"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Primetime",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "12:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9760"
+    },
+    {
+     "time": "14:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9761"
+    },
+    {
+     "time": "17:35",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9762"
+    },
+    {
+     "time": "20:20",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9763"
+    },
+    {
+     "time": "23:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9764"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9760"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Heart of the Beast",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "12:15",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9784"
+    },
+    {
+     "time": "15:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9785"
+    },
+    {
+     "time": "17:35",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9786"
+    },
+    {
+     "time": "20:15",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9787"
+    },
+    {
+     "time": "22:55",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9788"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9784"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Forgotten Island",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "10:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9746"
+    },
+    {
+     "time": "13:35",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9747"
+    },
+    {
+     "time": "16:20",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9748"
+    },
+    {
+     "time": "19:10",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9749"
+    },
+    {
+     "time": "22:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9750"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9746"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Avengers: Endgame Encore",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "10:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9756"
+    },
+    {
+     "time": "14:35",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9757"
+    },
+    {
+     "time": "21:25",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9759"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9756"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Resident Evil",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "12:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9765"
+    },
+    {
+     "time": "15:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9766"
+    },
+    {
+     "time": "18:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9758"
+    },
+    {
+     "time": "21:15",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9767"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9765"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Practical Magic 2",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "11:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9741"
+    },
+    {
+     "time": "17:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9743"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9741"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Spider-Man: Brand New Day",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "14:10",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9742"
+    },
+    {
+     "time": "20:35",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9744"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9742"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "The Odyssey",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "18:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9754"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9754"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "The Social Reckoning",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "17:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9182"
+    },
+    {
+     "time": "20:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9161"
+    },
+    {
+     "time": "23:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9162"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9182"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Other Mommy Fan Event Screening",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "17:50",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/8883"
+    }
+   ],
+   "format": "ATMOS XTR",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/8883"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Other Mommy",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "15:25",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9526"
+    },
+    {
+     "time": "20:35",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9527"
+    },
+    {
+     "time": "23:00",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9528"
+    }
+   ],
+   "format": "ATMOS XTR",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9526"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Verity",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "11:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9820"
+    },
+    {
+     "time": "12:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9815"
+    },
+    {
+     "time": "14:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9821"
+    },
+    {
+     "time": "16:55",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9825"
+    },
+    {
+     "time": "17:50",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9817"
+    },
+    {
+     "time": "19:55",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9822"
+    },
+    {
+     "time": "20:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9954"
+    },
+    {
+     "time": "23:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9819"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9820"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "The Nightmare Before Christmas",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "10:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9799"
+    },
+    {
+     "time": "13:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9800"
+    },
+    {
+     "time": "15:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9801"
+    },
+    {
+     "time": "22:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9803"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9799"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Digger",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "11:20",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9824"
+    }
+   ],
+   "format": "ATMOS XTR",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9824"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Digger",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "14:50",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9816"
+    },
+    {
+     "time": "23:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9823"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9816"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Primetime",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "11:40",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9808"
+    },
+    {
+     "time": "14:20",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9809"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9808"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Heart of the Beast",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "12:15",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9826"
+    },
+    {
+     "time": "14:55",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9827"
+    },
+    {
+     "time": "17:35",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9828"
+    },
+    {
+     "time": "20:15",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9829"
+    },
+    {
+     "time": "22:55",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9830"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9826"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Forgotten Island",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "10:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9794"
+    },
+    {
+     "time": "13:35",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9795"
+    },
+    {
+     "time": "16:25",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9796"
+    },
+    {
+     "time": "19:10",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9797"
+    },
+    {
+     "time": "22:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9798"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9794"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Avengers: Endgame Encore",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "10:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9804"
+    },
+    {
+     "time": "14:35",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9805"
+    },
+    {
+     "time": "18:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9806"
+    },
+    {
+     "time": "22:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9807"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9804"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Resident Evil",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "12:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9810"
+    },
+    {
+     "time": "15:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9811"
+    },
+    {
+     "time": "17:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9812"
+    },
+    {
+     "time": "20:05",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9813"
+    },
+    {
+     "time": "22:45",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9814"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9810"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Practical Magic 2",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "11:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9789"
+    },
+    {
+     "time": "17:20",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9791"
+    },
+    {
+     "time": "23:35",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9793"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9789"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Spider-Man: Brand New Day",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "14:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9790"
+    },
+    {
+     "time": "20:20",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9792"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9790"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "The Odyssey",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "18:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9802"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9802"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "The Social Reckoning",
+   "date": "2026-10-09",
+   "times": [
+    {
+     "time": "11:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9183"
+    },
+    {
+     "time": "14:20",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9184"
+    },
+    {
+     "time": "17:10",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9185"
+    },
+    {
+     "time": "20:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9186"
+    },
+    {
+     "time": "22:50",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9187"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9183"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Other Mommy",
+   "date": "2026-10-09",
+   "times": [
+    {
+     "time": "20:05",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/8888"
+    },
+    {
+     "time": "22:40",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/8887"
+    }
+   ],
+   "format": "ATMOS XTR",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/8888"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "The Social Reckoning",
+   "date": "2026-10-10",
+   "times": [
+    {
+     "time": "11:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9192"
+    },
+    {
+     "time": "14:20",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9191"
+    },
+    {
+     "time": "17:10",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9190"
+    },
+    {
+     "time": "20:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9189"
+    },
+    {
+     "time": "22:50",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9188"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9192"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Other Mommy",
+   "date": "2026-10-10",
+   "times": [
+    {
+     "time": "17:30",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/8892"
+    },
+    {
+     "time": "20:05",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/8891"
+    },
+    {
+     "time": "22:40",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/8890"
+    }
+   ],
+   "format": "ATMOS XTR",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/8892"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Se7en (1995)",
+   "date": "2026-10-11",
+   "times": [
+    {
+     "time": "15:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9512"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9512"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "The Social Reckoning",
+   "date": "2026-10-11",
+   "times": [
+    {
+     "time": "11:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9197"
+    },
+    {
+     "time": "14:20",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9196"
+    },
+    {
+     "time": "17:10",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9195"
+    },
+    {
+     "time": "20:00",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9194"
+    },
+    {
+     "time": "22:50",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9193"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9197"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Other Mommy",
+   "date": "2026-10-11",
+   "times": [
+    {
+     "time": "17:30",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/8895"
+    },
+    {
+     "time": "20:05",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/8894"
+    },
+    {
+     "time": "22:40",
+     "format": "ATMOS XTR",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/8893"
+    }
+   ],
+   "format": "ATMOS XTR",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/8895"
+  },
+  {
+   "theater": "CMX Brickell City Centre",
+   "theater_id": "cmx-brickell",
+   "movie": "Se7en (1995)",
+   "date": "2026-10-12",
+   "times": [
+    {
+     "time": "18:30",
+     "format": "Reserved Seating",
+     "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9513"
+    }
+   ],
+   "format": "Reserved Seating",
+   "ticket_url": "https://www.cmxcinemas.com/cmx-brickell-city-centre-dine-in/tickets/9513"
+  },
+  {
+   "theater": "Rooftop Cinema Club Miami",
+   "theater_id": "rooftop-miami",
+   "movie": "Supernatural Mini Marathon",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "20:00",
+     "format": "Outdoor",
+     "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/supernatural-mini-marathon-25010"
+    }
+   ],
+   "format": "Outdoor",
+   "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/supernatural-mini-marathon-25010",
+   "venue_note": "South Beach, Miami"
+  },
+  {
+   "theater": "Rooftop Cinema Club Miami",
+   "theater_id": "rooftop-miami",
+   "movie": "Inception",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "20:00",
+     "format": "Outdoor",
+     "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/inception-25453"
+    }
+   ],
+   "format": "Outdoor",
+   "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/inception-25453",
+   "venue_note": "South Beach, Miami"
+  },
+  {
+   "theater": "Rooftop Cinema Club Miami",
+   "theater_id": "rooftop-miami",
+   "movie": "Practical Magic",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "19:45",
+     "format": "Outdoor",
+     "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/practical-magic-24887"
+    }
+   ],
+   "format": "Outdoor",
+   "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/practical-magic-24887",
+   "venue_note": "South Beach, Miami"
+  },
+  {
+   "theater": "Rooftop Cinema Club Miami",
+   "theater_id": "rooftop-miami",
+   "movie": "American Psycho",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "22:15",
+     "format": "Outdoor",
+     "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/american-psycho-24888"
+    }
+   ],
+   "format": "Outdoor",
+   "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/american-psycho-24888",
+   "venue_note": "South Beach, Miami"
+  },
+  {
+   "theater": "Rooftop Cinema Club Miami",
+   "theater_id": "rooftop-miami",
+   "movie": "La La Land",
+   "date": "2026-10-09",
+   "times": [
+    {
+     "time": "19:30",
+     "format": "Outdoor",
+     "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/la-la-land-24889"
+    }
+   ],
+   "format": "Outdoor",
+   "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/la-la-land-24889",
+   "venue_note": "South Beach, Miami"
+  },
+  {
+   "theater": "Rooftop Cinema Club Miami",
+   "theater_id": "rooftop-miami",
+   "movie": "Scream (1996)",
+   "date": "2026-10-09",
+   "times": [
+    {
+     "time": "22:30",
+     "format": "Outdoor",
+     "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/scream-1996-24890"
+    }
+   ],
+   "format": "Outdoor",
+   "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/scream-1996-24890",
+   "venue_note": "South Beach, Miami"
+  },
+  {
+   "theater": "Rooftop Cinema Club Miami",
+   "theater_id": "rooftop-miami",
+   "movie": "Hocus Pocus",
+   "date": "2026-10-10",
+   "times": [
+    {
+     "time": "17:00",
+     "format": "Outdoor",
+     "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/hocus-pocus-24891"
+    }
+   ],
+   "format": "Outdoor",
+   "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/hocus-pocus-24891",
+   "venue_note": "South Beach, Miami"
+  },
+  {
+   "theater": "Rooftop Cinema Club Miami",
+   "theater_id": "rooftop-miami",
+   "movie": "How to Lose a Guy in 10 Days",
+   "date": "2026-10-10",
+   "times": [
+    {
+     "time": "19:45",
+     "format": "Outdoor",
+     "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/how-to-lose-a-guy-in-10-days-24892"
+    }
+   ],
+   "format": "Outdoor",
+   "ticket_url": "https://rooftopcinemaclub.com/us/miami-beach/south-beach/screenings/how-to-lose-a-guy-in-10-days-24892",
+   "venue_note": "South Beach, Miami"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "67 BOMBS TO ENID",
+   "date": "2026-10-15",
+   "times": [
+    {
+     "time": "19:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/67-bombs-to-enid"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/67-bombs-to-enid"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "DIGGER",
+   "date": "2026-10-02",
+   "times": [
+    {
+     "time": "19:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "21:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/digger"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "DIGGER",
+   "date": "2026-10-03",
+   "times": [
+    {
+     "time": "13:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "16:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "18:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/digger"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "DIGGER",
+   "date": "2026-10-04",
+   "times": [
+    {
+     "time": "13:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "16:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "18:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "21:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/digger"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "DIGGER",
+   "date": "2026-10-05",
+   "times": [
+    {
+     "time": "19:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "21:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/digger"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "DIGGER",
+   "date": "2026-10-06",
+   "times": [
+    {
+     "time": "19:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "21:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/digger"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "DIGGER",
+   "date": "2026-10-07",
+   "times": [
+    {
+     "time": "19:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "21:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/digger"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "DIGGER",
+   "date": "2026-10-08",
+   "times": [
+    {
+     "time": "19:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "21:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/digger"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "DIGGER",
+   "date": "2026-10-09",
+   "times": [
+    {
+     "time": "19:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "21:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/digger"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "DIGGER",
+   "date": "2026-10-10",
+   "times": [
+    {
+     "time": "13:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "16:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "18:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "21:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/digger"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "DIGGER",
+   "date": "2026-10-11",
+   "times": [
+    {
+     "time": "13:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "16:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "18:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    },
+    {
+     "time": "21:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/digger"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "DIGGER",
+   "date": "2026-10-12",
+   "times": [
+    {
+     "time": "19:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/digger"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/digger"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "Ken Russell's THE DEVILS (4K Restoration)",
+   "date": "2026-10-16",
+   "times": [
+    {
+     "time": "19:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+    },
+    {
+     "time": "21:15",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "Ken Russell's THE DEVILS (4K Restoration)",
+   "date": "2026-10-17",
+   "times": [
+    {
+     "time": "14:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+    },
+    {
+     "time": "16:15",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+    },
+    {
+     "time": "18:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+    },
+    {
+     "time": "20:45",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "Ken Russell's THE DEVILS (4K Restoration)",
+   "date": "2026-10-18",
+   "times": [
+    {
+     "time": "14:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+    },
+    {
+     "time": "16:15",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+    },
+    {
+     "time": "18:30",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "Ken Russell's THE DEVILS (4K Restoration)",
+   "date": "2026-10-19",
+   "times": [
+    {
+     "time": "21:15",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "Ken Russell's THE DEVILS (4K Restoration)",
+   "date": "2026-10-20",
+   "times": [
+    {
+     "time": "21:15",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "Ken Russell's THE DEVILS (4K Restoration)",
+   "date": "2026-10-21",
+   "times": [
+    {
+     "time": "21:15",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "Ken Russell's THE DEVILS (4K Restoration)",
+   "date": "2026-10-22",
+   "times": [
+    {
+     "time": "21:15",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/ken-russells-the-devils-4k-restoration"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "Right in the Eye: Georges M\u00e9li\u00e8s Films in Concert",
+   "date": "2026-10-14",
+   "times": [
+    {
+     "time": "19:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/right-in-the-eye-georges-melies-films-in-concert"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/right-in-the-eye-georges-melies-films-in-concert"
+  },
+  {
+   "theater": "O Cinema \u2014 O Cinema South Beach",
+   "theater_id": "o-cinema",
+   "movie": "The Rocky Horror Picture Show & Day of the Dead",
+   "date": "2026-11-01",
+   "times": [
+    {
+     "time": "18:00",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/the-rocky-horror-picture-show-day-of-the-dead"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/the-rocky-horror-picture-show-day-of-the-dead"
+  },
+  {
+   "theater": "O Cinema \u2014 Miami Beach Bandshell",
+   "theater_id": "o-cinema",
+   "movie": "YOUR MOTHER YOUR MOTHER YOUR MOTHER",
+   "date": "2026-10-23",
+   "times": [
+    {
+     "time": "21:15",
+     "format": "Standard",
+     "ticket_url": "https://www.o-cinema.org/events/your-mother-your-mother-your-mother"
+    }
+   ],
+   "format": "Standard",
+   "ticket_url": "https://www.o-cinema.org/events/your-mother-your-mother-your-mother"
+  }
+ ],
+ "blocked": {
+  "amc-sunset": {
+   "name": "AMC Sunset Place 24",
+   "blocked": true,
+   "detail": "Cloudflare bot challenge on amctheatres.com; vendor auth required on api.amctheatres.com (probe error: HTTP Error 403: Forbidden)",
+   "probe_status": null
+  },
+  "silverspot-downtown": {
+   "name": "Silverspot Cinema Downtown Miami",
+   "blocked": true,
+   "detail": "Cloudflare bot challenge on silverspot.net (probe error: HTTP Error 403: Forbidden)",
+   "probe_status": null
+  },
+  "cinepolis-coconut-grove": {
+   "name": "Cin\u00e9polis Coconut Grove",
+   "blocked": true,
+   "detail": "Cloudflare bot challenge on cinepolisusa.com (probe error: HTTP Error 403: Forbidden)",
+   "probe_status": null
+  },
+  "gables-cinema": {
+   "name": "Coral Gables Art Cinema",
+   "blocked": true,
+   "detail": "Ticketing on Incapsula-blocked AgileTix; site lists films but not dated showtimes",
+   "probe_status": 200
+  }
+ },
+ "stats": {
+  "theaters_ok": 3,
+  "listings": 79
+ }
+}

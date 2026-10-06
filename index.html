@@ -287,7 +287,10 @@ body {
 .wrow .wt { flex: 1; min-width: 0; }
 .wrow .wt b { display: block; font-size: 15px; font-weight: 600; letter-spacing: -0.01em; }
 .wrow .wt span { font-size: 12.5px; color: var(--gray); }
-.wrow .wacts { display: flex; gap: 6px; flex: none; }
+.wrow .wacts { display: flex; gap: 6px; flex: none; flex-wrap: wrap; justify-content: flex-end; }
+.wrow.live { background: var(--gray6); border-radius: 12px; padding: 11px 12px; }
+.wrow.live + .wrow.live { border-top: none; margin-top: 8px; }
+.wrow.live .wt b::after { content: " · LIVE"; font-size: 10px; font-weight: 700; color: #0a7a3d; letter-spacing: 0.04em; }
 .minibtn.ghost { background: var(--gray5); color: var(--ink); }
 .api-note { font-size: 12.5px; color: var(--gray); line-height: 1.5; margin-top: 12px; padding: 10px 12px; background: var(--gray6); border-radius: 10px; }
 
@@ -541,6 +544,7 @@ const TICKET_APPS = [
 
 /* ---------- state ---------- */
 let NOW = [], SOON = [];
+let ST = []; // scraped showtimes from showtimes.json (weekly cron)
 let view = "now", tab = "movies", query = "";
 let saved = new Set(JSON.parse(localStorage.getItem("mia-movies-saved") || "[]"));
 const byId = id => [...NOW, ...SOON].find(m => m.id === id);
@@ -579,6 +583,35 @@ async function loadMovies() {
   const j = await fetch("movies.json").then(r => r.json());
   NOW = j.nowPlaying; SOON = j.comingSoon;
 }
+/* Weekly-scraped showtimes (CMX, Rooftop, O Cinema). Non-blocking; the
+   "Where to watch" rows fall back to deep links when absent. */
+async function loadShowtimes() {
+  try {
+    const j = await fetch("showtimes.json").then(r => r.json());
+    ST = j.showtimes || [];
+  } catch (e) { /* showtimes.json missing or stale — deep links still work */ }
+}
+const normT = s => String(s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+const ST_THEATER = { "cmx-brickell": "CMX Brickell City Centre",
+  "rooftop-miami": "Rooftop Cinema Club", "o-cinema": "O Cinema South Beach" };
+/* Real showtime rows for a movie: grouped by date, soonest first. */
+function liveTimes(m) {
+  const key = normT(m.title);
+  const hits = ST.filter(s => normT(s.movie) === key);
+  if (!hits.length) return "";
+  const today = new Date().toISOString().slice(0, 10);
+  hits.sort((a, b) => a.date < b.date ? -1 : 1);
+  const upcoming = hits.filter(h => h.date >= today).slice(0, 3);
+  if (!upcoming.length) return "";
+  return upcoming.map(h => {
+    const tname = ST_THEATER[h.theater_id] || h.theater;
+    const btns = h.times.slice(0, 8).map(t =>
+      `<button class="minibtn" data-open="${esc(t.ticket_url)}">${esc(fmtTime(t.time))}</button>`).join("");
+    return `<div class="wrow live"><div class="wt"><b>${esc(tname)}</b><span>${esc(fmtDate(h.date))}${h.format && h.format !== "Standard" ? " · " + esc(h.format) : ""}</span></div><div class="wacts">${btns}</div></div>`;
+  }).join("");
+}
+const fmtTime = t => { const m = /^(\d{2}):(\d{2})$/.exec(t || ""); if (!m) return t || "";
+  let h = +m[1]; const ap = h >= 12 ? "p" : "a"; h = h % 12 || 12; return `${h}:${m[2]}${ap}`; };
 
 /* ---------- render ---------- */
 const ICON_FILM = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M2.5 9.5h19M7.5 5v4.5M16.5 5v4.5"/></svg>`;
@@ -705,10 +738,11 @@ function renderSaved() {
 }
 
 /* ---------- detail sheet ---------- */
-/* Where to watch: per-theater ticket rows. v1 uses smart deep links;
-   swap showtimesQ() for a live showtime fetch once the Atom Partner API key lands. */
+/* Where to watch: per-theater ticket rows. Live scraped showtimes render
+   first when available; everything else falls back to smart deep links. */
 function watchRows(m) {
-  return THEATERS.map(t => `
+  const live = liveTimes(m);
+  const rows = THEATERS.map(t => `
     <div class="wrow">
       <div class="wt"><b>${esc(t.name)}</b><span>${esc(t.area)} · ${t.kind === "premium" ? "Premium" : "Repertory & indie"}</span></div>
       <div class="wacts">
@@ -716,6 +750,7 @@ function watchRows(m) {
         <button class="minibtn ghost" data-open="${esc(showtimesQ(m.title + " " + t.name + " Miami"))}">Times</button>
       </div>
     </div>`).join("");
+  return live + rows;
 }
 function openSheet(m) {
   const isSaved = saved.has(m.id);
@@ -740,7 +775,7 @@ function openSheet(m) {
       </div>
       <div class="showtimes-label">Where to watch in Miami</div>
       <div>${watchRows(m)}</div>
-      <div class="api-note">Live showtimes plug in here — tap Times for today's listings.</div>
+      <div class="api-note">Live times update every Wednesday — tap a time to book direct.</div>
       <button class="bigbtn" id="sheetShowtimes" style="margin-top:14px">All showtimes near Miami</button>
       <div style="height:8px"></div>
     </div>`;
@@ -855,6 +890,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // initial load
   $("#nowGrid").innerHTML = Array.from({length: 6}, () => `<div class="skel-p"></div>`).join("");
+  loadShowtimes(); // fire-and-forget; rows re-render with live times when opened
   loadMovies().then(() => { renderMovies(); renderTheaters(); renderTips(); renderMFC(); });
 });
 </script>
